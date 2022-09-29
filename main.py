@@ -1,9 +1,3 @@
-"""This program was created in Repl.it (https://replit.com/). Thus, all file paths and features were tested there.
-To test this code, please transfer the code into the Repl.it IDE for all functionalities to be the same.
-
-Dependencies: The Tkinter library, Random library, audio from the Replit API, the urllib library, AudioSegment from
-pydub, and os must be imported before the start of the program. """
-
 # https://docs.python.org/3/library/os.path.html
 # Library can be found here:
 # https://github.com/python/cpython/blob/3.9/Lib/os.py
@@ -209,7 +203,7 @@ class Game():
            bg='#91EA8B')
        subtext.grid(row=3, column=1, columnspan=3, padx=20, pady=20)
        button_l1 = tk.Button(self.root,
-                             text="Level 1",
+                             text="Easy",
                              padx=50,
                              pady=30,
                              command=lambda: self.change_page(1),
@@ -217,7 +211,7 @@ class Game():
                              bg='#BDEAC8')
        button_l1.grid(row=4, column=1)
        button_l2 = tk.Button(self.root,
-                             text="Level 2",
+                             text="Medium",
                              padx=40,
                              pady=30,
                              command=lambda: self.change_page(2),
@@ -225,7 +219,7 @@ class Game():
                              bg='#BDEAC8')
        button_l2.grid(row=4, column=2)
        button_l3 = tk.Button(self.root,
-                             text="Level 3",
+                             text="Hard",
                              padx=40,
                              pady=30,
                              command=lambda: self.change_page(3),
